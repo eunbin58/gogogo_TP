@@ -12,10 +12,10 @@ import openai
 from datetime import datetime
 import sqlite3
 import time
-# __import__('pysqlite3')
-# import sys
+__import__('pysqlite3')
+import sys
 
-# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Load and split documents
 loader = DirectoryLoader('data', glob="*.pdf", loader_cls=PyPDFLoader)
