@@ -73,7 +73,7 @@ def ask_gpt(prompt):
 def main():
 
     st.set_page_config(
-        page_title="인공지능 개발발", layout="wide")
+        page_title="인공지능 개발", layout="wide")
 
     if "chat" not in st.session_state:
         st.session_state["chat"] = []
