@@ -73,7 +73,7 @@ def ask_gpt(prompt):
 def main():
 
     st.set_page_config(
-        page_title="프로젝트", layout="wide")
+        page_title="인공지능 개발발", layout="wide")
 
     if "chat" not in st.session_state:
         st.session_state["chat"] = []
@@ -85,7 +85,7 @@ def main():
     #     st.session_state["Question"] = False
     
 
-    st.header("Project Name", divider="rainbow")
+    st.header("신입생 GoGoGo", divider="rainbow")
 
     with st.sidebar:
         
